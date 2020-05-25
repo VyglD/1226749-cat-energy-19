@@ -1,1 +1,6 @@
-//Файл для подключения scss блоков
+@import "fonts.scss";
+@import "common.scss";
+@import "blocks/page.scss";
+@import "blocks/header.scss";
+@import "blocks/main.scss";
+@import "blocks/footer.scss";

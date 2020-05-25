@@ -1,0 +1,14 @@
+.page {
+  display: block;
+  min-width: $mobile;
+  width: 100%;
+  max-width: $desktop;
+  margin: 0 auto;
+  padding: 0;
+
+  background: #ffffff;
+
+  // временные
+  // max-width: $mobile;
+  // max-width: $tablet;
+}

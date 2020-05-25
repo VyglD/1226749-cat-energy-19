@@ -1,0 +1,75 @@
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1440px;
+
+$color-text: #111111;
+
+img {
+  display: block;
+}
+
+picture {
+  display: block;
+}
+
+a:not([href]) {
+  cursor: default;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.list-reset {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin custom-text($size, $height, $style) {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: $size;
+  line-height: $height;
+  text-transform: $style;
+}
+
+@mixin text($wight, $size, $height, $style) {
+  @include custom-text($size, $height, $style);
+
+  font-weight: $wight;
+}
+
+@keyframes shift {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shift-undo {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
