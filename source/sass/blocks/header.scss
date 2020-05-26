@@ -115,10 +115,15 @@
   transition: transform 0.5s;
 
   &--no-js {
+    position: relative;
+
     transition: none;
+    transform: none;
   }
 
   &--open {
+    position: relative;
+
     transform: translateY(0);
   }
 }

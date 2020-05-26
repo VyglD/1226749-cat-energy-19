@@ -1,0 +1,16 @@
+.poster {
+  margin: 0;
+  padding: 1px 0;
+
+  background-color: #68b738;
+}
+
+.poster__title {
+  margin: 0;
+  padding: 0;
+
+  color: white;
+  text-align: center;
+
+  @include text(400, 36px, 36px, none);
+}
