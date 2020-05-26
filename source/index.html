@@ -9,7 +9,7 @@
       <div class="header__nav-panel">
         <a class="header__logo-link">
           <picture class="header__logo-wrapper">
-            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <img class="header__logo" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Кэт энерджи">
           </picture>
@@ -34,10 +34,15 @@
       <section class="main__poster poster">
         <h1 class="poster__title">Функциональное питание для котов</h1>
         <p class="poster__sub-title">Занялся собой? Займись котом!</p>
-        <picture>
-          <img>
+        <picture class="poster__image-wrapper">
+          <source type="image/webp" media="(min-width: 1440px" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
+          <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+          <img class="poster__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270" alt="Упаковка CAT ENERGY PRO с курицей">
         </picture>
-        <button></button>
+        <a href="program.html" class="poster__button action-button">Подобрать программу</a>
       </section>
     </main>
     <footer class="page__footer footer">

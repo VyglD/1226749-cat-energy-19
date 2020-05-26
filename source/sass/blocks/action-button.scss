@@ -1,0 +1,39 @@
+.action-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  @include text(400, 14px, 18px, uppercase);
+
+  background-color: #68b738;
+  border: none;
+  outline: none;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: #ffffff4d;
+  }
+}
+
+@media (min-width: $tablet) {
+  .action-button {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .action-button {
+    &:focus {
+      background-color: #5eaa2f;
+    }
+  }
+}

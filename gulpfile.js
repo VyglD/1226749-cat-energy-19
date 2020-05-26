@@ -33,13 +33,36 @@ gulp.task('copy', function() {
 });
 
 gulp.task('js', function() {
-  return gulp.src(['source/js/**/*.js'])
+  return gulp.src([
+      'source/js/**/*.js',
+      '!source/js/picturefill.min.js',
+      '!source/js/svg4everybody.js'
+    ])
     .pipe(sourcemap.init())
     .pipe(concat('app.min.js'))
     .pipe(uglify())
     .pipe(sourcemap.write())
     .pipe(gulp.dest('build/js'));
 });
+
+gulp.task('svg-min', function() {
+  return gulp.src(['source/js/svg4everybody.js'])
+    .pipe(rename('svg4everybody.min.js'))
+    .pipe(sourcemap.init())
+    .pipe(uglify())
+    .pipe(sourcemap.write())
+    .pipe(gulp.dest('source/js'));
+});
+
+gulp.task('js-min', function() {
+  return gulp.src(['source/js/**/*.min.js'])
+  .pipe(sourcemap.init())
+  .pipe(concat('polyfills.min.js'))
+  .pipe(sourcemap.write())
+    .pipe(gulp.dest('build/js'));
+});
+
+gulp.task('polyfills', gulp.series('svg-min','js-min'));
 
 gulp.task('img', function() {
   return gulp.src('source/img/**/*.{png,jpg,svg}')
@@ -111,5 +134,5 @@ gulp.task('server', function () {
   gulp.watch('source/js/**/*.js', gulp.series('js','refresh'));
 });
 
-gulp.task('build', gulp.series('clean','copy','img','webp','css','svg','js','html'));
+gulp.task('build', gulp.series('clean','copy','img','webp','css','svg','js','polyfills','html'));
 gulp.task('start', gulp.series('build', 'server'));

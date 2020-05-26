@@ -2,6 +2,7 @@
   position: relative;
 
   display: block;
+  max-width: $desktop;
   margin: 0;
   padding: 0;
 }
@@ -160,6 +161,8 @@
     text-decoration: none;
 
     @include text(inherit, inherit, inherit, inherit);
+
+    outline: none;
   }
 
   &--active {
@@ -178,6 +181,7 @@
 @media (min-width: $tablet) {
   .header {
     display: flex;
+    justify-content: space-between;
     padding: 24px 30px;
   }
 
@@ -189,6 +193,8 @@
   .header__nav-panel {
     width: auto;
     height: auto;
+
+    background-color: transparent;
   }
 
   .header__logo-wrapper {
@@ -254,11 +260,31 @@
     height: 59px;
   }
 
+  .header__nav {
+    width: 50%;
+  }
+
+  .header__nav-list {
+    background-color: transparent;
+  }
+
   .header__nav-item {
     margin-left: 34px;
 
     font-size: 20px;
     line-height: 25px;
+
+    a[href] {
+      &:focus {
+        opacity: 0.6;
+      }
+    }
+
+    &--active {
+      &::after {
+        background-color: #ffffff;
+      }
+    }
 
     &--index {
       color: #ffffff;
