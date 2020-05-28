@@ -1,8 +1,12 @@
+// Common
 @import "fonts.scss";
 @import "common.scss";
+// Cross-pages blocks
 @import "blocks/action-button.scss";
-@import "blocks/page.scss";
+// One-page blocks
+@import "blocks/poster.scss";
+@import "blocks/services.scss";
+// Structural blocks
 @import "blocks/header.scss";
 @import "blocks/main.scss";
 @import "blocks/footer.scss";
-@import "blocks/poster.scss";

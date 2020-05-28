@@ -1,5 +1,9 @@
-.main {
-  display: block;
-  margin: 0;
-  padding: 0;
+.main__services {
+  margin-top: 21px;
+}
+
+@media (min-width: $desktop) {
+  .main__services {
+    margin: 80px auto 0;
+  }
 }

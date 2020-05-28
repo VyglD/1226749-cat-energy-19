@@ -1,12 +1,3 @@
-.header {
-  position: relative;
-
-  display: block;
-  max-width: $desktop;
-  margin: 0;
-  padding: 0;
-}
-
 .header__nav-panel {
   position: relative;
   z-index: 10;
@@ -179,12 +170,6 @@
 }
 
 @media (min-width: $tablet) {
-  .header {
-    display: flex;
-    justify-content: space-between;
-    padding: 24px 30px;
-  }
-
   .header__nav-panel,
   .header__nav-item:nth-child(n) {
     border: none;
@@ -201,11 +186,11 @@
     position: relative;
     top: 0;
     left: 0;
-  }
 
-  .header__logo {
-    width: 173px;
-    height: 58px;
+    img {
+      width: 173px;
+      height: 58px;
+    }
   }
 
   .header__nav-toggle {
@@ -251,13 +236,11 @@
 }
 
 @media (min-width: $desktop) {
-  .header {
-    padding: 55px 110px;
-  }
-
-  .header__logo {
-    width: 202px;
-    height: 59px;
+  .header__logo-wrapper {
+    img {
+      width: 202px;
+      height: 59px;
+    }
   }
 
   .header__nav {

@@ -7,16 +7,18 @@ $retina-dppx: 1.5dppx;
 
 $color-text: #111111;
 
-img {
-  display: block;
+
+@mixin custom-text($size, $height, $style) {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: $size;
+  line-height: $height;
+  text-transform: $style;
 }
 
-picture {
-  display: block;
-}
+@mixin text($wight, $size, $height, $style) {
+  @include custom-text($size, $height, $style);
 
-a:not([href]) {
-  cursor: default;
+  font-weight: $wight;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -44,35 +46,54 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-@mixin custom-text($size, $height, $style) {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: $size;
-  line-height: $height;
-  text-transform: $style;
+body {
+  display: block;
+  min-width: $mobile;
+  width: 100%;
+  max-width: $desktop;
+  margin: 0 auto;
+  padding: 0;
+
+  background: #ffffff;
 }
 
-@mixin text($wight, $size, $height, $style) {
-  @include custom-text($size, $height, $style);
+header {
+  position: relative;
 
-  font-weight: $wight;
+  display: block;
+  max-width: $desktop;
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes shift {
-  0% {
-    transform: translateY(-100%);
-  }
+main {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
 
-  100% {
-    transform: translateY(0);
+img {
+  display: block;
+}
+
+picture {
+  display: block;
+}
+
+a:not([href]) {
+  cursor: default;
+}
+
+@media (min-width: $tablet) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 30px;
   }
 }
 
-@keyframes shift-undo {
-  0% {
-    transform: translateY(0);
-  }
-
-  100% {
-    transform: translateY(-100%);
+@media (min-width: $desktop) {
+  .header {
+    padding: 55px 110px;
   }
 }
