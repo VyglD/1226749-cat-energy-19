@@ -2,8 +2,27 @@
   margin-top: 21px;
 }
 
+.main__advantage {
+  margin-top: 16px;
+  margin-bottom: 22px;
+}
+
+@media (min-width: $tablet) {
+  .main__services {
+    margin-top: -1px;
+  }
+
+  .main__advantage {
+    margin-top: 46px;
+  }
+}
+
 @media (min-width: $desktop) {
   .main__services {
     margin: 80px auto 0;
+  }
+
+  .main__advantage {
+    margin: 75px auto 0;
   }
 }
