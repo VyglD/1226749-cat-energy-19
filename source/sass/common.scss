@@ -22,6 +22,7 @@ $color-text: #111111;
 }
 
 .visually-hidden:not(:focus):not(:active),
+input[type="range"].visually-hidden,
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
@@ -95,5 +96,15 @@ a:not([href]) {
 @media (min-width: $desktop) {
   .header {
     padding: 55px 110px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  // html {
+  //   margin-right: calc(100vw - 100%);
+  // }
+
+  html {
+    overflow-x: hidden;
   }
 }

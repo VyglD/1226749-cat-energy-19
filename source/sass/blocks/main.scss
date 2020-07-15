@@ -7,6 +7,11 @@
   margin-bottom: 22px;
 }
 
+.main__example {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
 @media (min-width: $tablet) {
   .main__services {
     margin-top: -1px;
@@ -14,6 +19,11 @@
 
   .main__advantage {
     margin-top: 46px;
+    margin-bottom: 0;
+  }
+
+  .main__example {
+    margin-top: 0;
   }
 }
 
@@ -24,5 +34,9 @@
 
   .main__advantage {
     margin: 75px auto 0;
+  }
+
+  .main__example {
+    margin-top: 24px;
   }
 }
