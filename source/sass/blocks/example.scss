@@ -2,7 +2,9 @@ $tablet-img-width: 680px;
 $tablet-img-height: 517px;
 $tablet-img-padding: 113px;
 $tablet-img-border: 0.73;
-$tablet-img-background-height: round(($tablet-img-height + $tablet-img-padding) * $tablet-img-border);
+$tablet-img-background-height: round(
+  ($tablet-img-height + $tablet-img-padding) * $tablet-img-border
+);
 $desktop-img-margin: -21px;
 $desktop-img-padding: $tablet-img-padding - $desktop-img-margin;
 $desktop-img-background-height: $tablet-img-background-height;
@@ -334,9 +336,18 @@ $desktop-img-background-height: $tablet-img-background-height;
   .example__img {
     padding-bottom: $tablet-img-padding;
 
-    background:
-      linear-gradient(0deg, rgba(255, 255, 255, 0) $tablet-img-background-height, rgba(255, 255, 255, 1) $tablet-img-background-height),
-      linear-gradient(90deg, rgba(242, 242, 242, 1) 0%, rgba(242, 242, 242, 1) $tablet-img-width * 0.25, rgba(205, 205, 205, 1) $tablet-img-width * 0.75, rgba(205, 205, 205, 1) $tablet-img-width);
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0) $tablet-img-background-height,
+        rgba(255, 255, 255, 1) $tablet-img-background-height
+      ),
+      linear-gradient(
+        90deg,
+        rgba(242, 242, 242, 1) 0%,
+        rgba(242, 242, 242, 1) $tablet-img-width * 0.25,
+        rgba(205, 205, 205, 1) $tablet-img-width * 0.75,
+        rgba(205, 205, 205, 1) $tablet-img-width
+      );
 
     &--before {
       width: 50%;
@@ -512,9 +523,18 @@ $desktop-img-background-height: $tablet-img-background-height;
   .example__img {
     padding-bottom: $desktop-img-padding;
 
-    background:
-      linear-gradient(0deg, rgba(255, 255, 255, 0) $desktop-img-background-height, rgba(255, 255, 255, 1) $desktop-img-background-height),
-      linear-gradient(90deg, rgba(242, 242, 242, 1) 0%, rgba(242, 242, 242, 1) $tablet-img-width * 0.25, rgba(205, 205, 205, 1) $tablet-img-width * 0.75, rgba(205, 205, 205, 1) $tablet-img-width);
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0) $desktop-img-background-height,
+        rgba(255, 255, 255, 1) $desktop-img-background-height
+      ),
+      linear-gradient(
+        90deg,
+        rgba(242, 242, 242, 1) 0%,
+        rgba(242, 242, 242, 1) $tablet-img-width * 0.25,
+        rgba(205, 205, 205, 1) $tablet-img-width * 0.75,
+        rgba(205, 205, 205, 1) $tablet-img-width
+      );
 
     img {
       width: 685px;
