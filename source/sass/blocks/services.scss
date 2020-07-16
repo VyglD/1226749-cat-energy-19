@@ -6,6 +6,7 @@ $background-img-service-pro: url("../img/icon-cat-pro.svg"), $background-color-s
   display: block;
   width: 280px / $mobile * 100%;
   margin: 0 auto;
+  margin-top: 21px;
   padding: 0;
 }
 
@@ -135,6 +136,7 @@ $background-img-service-pro: url("../img/icon-cat-pro.svg"), $background-color-s
 @media (min-width: $tablet) {
   .services {
     width: 708px / $tablet * 100%;
+    margin-top: -1px;
   }
 
   .services-item {
@@ -227,6 +229,7 @@ $background-img-service-pro: url("../img/icon-cat-pro.svg"), $background-color-s
     justify-content: flex-start;
     flex-wrap: wrap;
     width: 100%;
+    margin: 80px auto 0;
     padding: 0 110px;
   }
 

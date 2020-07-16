@@ -2,6 +2,7 @@
   display: block;
   width: 280px / $mobile * 100%;
   margin: 0 auto;
+  margin-top: 16px;
 }
 
 .advantage__title {
@@ -112,6 +113,8 @@
 @media (min-width: $tablet) {
   .advantage {
     width: 708px / $tablet * 100%;
+    margin-top: 46px;
+    margin-bottom: 0;
   }
 
   .advantage__title {
@@ -198,6 +201,7 @@
 @media (min-width: $desktop) {
   .advantage {
     width: 1220px / $desktop * 100%;
+    margin: 75px auto 0;
   }
 
   .advantage__item {

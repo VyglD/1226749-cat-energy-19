@@ -2,13 +2,13 @@
 
 })();
 
-var rangeViewContainer = document.querySelector('#tranform-label-js');
-var rangeView = document.querySelector('#range-js');
+var rangeViewContainer = document.querySelector('#example__range-wrapper-js');
+var rangeView = document.querySelector('#example__range-line-js');
 var beforeImg = document.querySelector('#before-js');
 var rangeControl = document.querySelector('#transform-js');
-var beforeButton = document.querySelector('#example__control--before-js');
-var afterButton = document.querySelector('#example__control--after-js');
-var point = document.querySelector('#example__point-js');
+var beforeButton = document.querySelector('#example__toggle--before-js');
+var afterButton = document.querySelector('#example__toggle--after-js');
+var point = document.querySelector('#example__range-point-js');
 
 if (rangeViewContainer && rangeView && beforeImg) {
   var calculateCurrentWidth = function (offsetX) {
@@ -75,15 +75,15 @@ if (rangeViewContainer && rangeView && beforeImg) {
   };
 
   var onRangeFocus = function () {
-    rangeViewContainer.classList.add('example__transform--focus');
+    rangeViewContainer.classList.add('example__range-wrapper--focus');
 
     rangeControl.removeEventListener('focus', onRangeFocus);
     rangeControl.addEventListener('blur', onRangeBlur);
   };
 
   var onRangeBlur = function () {
-    if (rangeViewContainer.classList.contains('example__transform--focus')) {
-      rangeViewContainer.classList.remove('example__transform--focus');
+    if (rangeViewContainer.classList.contains('example__range-wrapper--focus')) {
+      rangeViewContainer.classList.remove('example__range-wrapper--focus');
     }
 
     rangeControl.removeEventListener('blur', onRangeBlur);

@@ -30,8 +30,8 @@
         </ul>
       </nav>
     </header>
-    <main class="main">
-      <section class="main__poster poster">
+    <main>
+      <section class="poster">
         <h1 class="poster__title">Функциональное питание для котов</h1>
         <p class="poster__sub-title">Занялся собой? Займись котом!</p>
         <picture class="poster__image-wrapper">
@@ -44,7 +44,7 @@
         </picture>
         <a href="program.html" class="poster__button action-button">Подобрать программу</a>
       </section>
-      <section class="main__services services">
+      <section class="services">
         <h2 class="visually-hidden">Услуги Cat Energy</h2>
         <div class="services-item services-item--slim">
           <h3>Похудение</h3>
@@ -58,7 +58,7 @@
           <a href="catalog.html">Каталог pro</a>
         </div>
       </section>
-      <section class="main__advantage advantage">
+      <section class="advantage">
         <h2 class="advantage__title">Как это работает</h2>
         <ul class="advantage__list list-reset">
           <li class="advantage__item advantage__item--natural">
@@ -75,7 +75,7 @@
           </li>
         </ul>
       </section>
-      <section class="main__example example">
+      <section class="example">
         <h2>Живой пример</h2>
         <p class="example__info">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
         <ul class="example__list-achievements list-reset">
@@ -92,9 +92,9 @@
             <p class="example__description">Затраты на питание:</p>
           </li>
         </ul>
-        <div class="example__transform-wrapper">
-          <div class="example__img-wrapper">
-            <picture class="example__img example__img--after">
+        <div class="example__slider-wrapper">
+          <div class="example__slide-wrapper">
+            <picture class="example__slide example__slide--after">
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
@@ -102,7 +102,7 @@
               <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
               <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Жирный кот до трансформации">
             </picture>
-            <picture class="example__img example__img--before" id="before-js">
+            <picture class="example__slide example__slide--before" id="before-js">
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
@@ -111,14 +111,14 @@
               <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Жирный кот до трансформации">
             </picture>
           </div>
-          <div class="example__transformation">
-            <button class="example__control" type="button" id="example__control--before-js">Было</button>
-            <label class="example__transform" for="transform-js" id="tranform-label-js">
-              <span class="example__range" id="range-js"></span>
-              <span class="example__point" id="example__point-js"></span>
+          <div class="example__control-wrapper">
+            <button class="example__toggle" type="button" id="example__toggle--before-js">Было</button>
+            <label class="example__range-wrapper" for="transform-js" id="example__range-wrapper-js">
+              <span class="example__range-line" id="example__range-line-js"></span>
+              <span class="example__range-point" id="example__range-point-js"></span>
             </label>
             <input class="visually-hidden" type="range" min="0" max="100" value="50" step="1" id="transform-js">
-            <button class="example__control" type="button" id="example__control--after-js">Стало</button>
+            <button class="example__toggle" type="button" id="example__toggle--after-js">Стало</button>
           </div>
         </div>
       </section>

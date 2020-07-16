@@ -16,14 +16,17 @@ $desktop-img-background-height: $tablet-img-background-height;
   box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
+  margin-top: 23px;
+  margin-bottom: 20px;
   padding: 0;
 
   border-bottom: 1px solid #f2f2f2;
+  border-top: 1px solid #f2f2f2;
   background-color: #f2f2f2;
 
   h2 {
     width: 280px / $mobile * 100%;
-    margin: 0 auto 23px;
+    margin: 17px auto 23px;
     padding: 0;
 
     color: #111111;
@@ -130,17 +133,17 @@ $desktop-img-background-height: $tablet-img-background-height;
   background-color: #f2f2f2;
 }
 
-.example__transform-wrapper {
+.example__slider-wrapper {
   width: 100%;
 }
 
-.example__img-wrapper,
-.example__img {
+.example__slide-wrapper,
+.example__slide {
   width: 320px;
   height: 240px;
 }
 
-.example__img {
+.example__slide {
   position: absolute;
 
   background-color: #f2f2f2;
@@ -155,13 +158,13 @@ $desktop-img-background-height: $tablet-img-background-height;
   }
 }
 
-.example__img-wrapper {
+.example__slide-wrapper {
   position: relative;
 
   margin: 0 auto;
 }
 
-.example__transformation {
+.example__control-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -171,7 +174,7 @@ $desktop-img-background-height: $tablet-img-background-height;
   margin: 31px auto 36px;
 }
 
-.example__control {
+.example__toggle {
   margin: 0;
   padding: 0;
 
@@ -190,7 +193,7 @@ $desktop-img-background-height: $tablet-img-background-height;
   }
 }
 
-.example__transform {
+.example__range-wrapper {
   display: flex;
   box-sizing: border-box;
   align-items: center;
@@ -210,7 +213,7 @@ $desktop-img-background-height: $tablet-img-background-height;
   }
 }
 
-.example__range {
+.example__range-line {
   display: block;
   width: 50%;
   height: 6px;
@@ -221,14 +224,12 @@ $desktop-img-background-height: $tablet-img-background-height;
 
 @media (min-width: $tablet) {
   .example {
-    padding-top: 44px;
+    margin-top: 0;
 
-    border-top: 1px solid #f2f2f2;
     background-color: #ffffff;
 
     h2 {
-      margin-left: auto;
-      margin-right: auto;
+      margin-top: 44px;
       width: 708px / $tablet * 100%;
 
       font-size: 60px;
@@ -288,7 +289,7 @@ $desktop-img-background-height: $tablet-img-background-height;
     background-color: #ffffff;
   }
 
-  .example__transform-wrapper {
+  .example__slider-wrapper {
     position: relative;
 
     height: $tablet-img-height + $tablet-img-padding;
@@ -322,18 +323,18 @@ $desktop-img-background-height: $tablet-img-background-height;
     }
   }
 
-  .example__img-wrapper,
-  .example__img,
-  .example__img img {
+  .example__slide-wrapper,
+  .example__slide,
+  .example__slide img {
     width: $tablet-img-width;
     height: $tablet-img-height;
   }
 
-  .example__img-wrapper {
+  .example__slide-wrapper {
     z-index: 1;
   }
 
-  .example__img {
+  .example__slide {
     padding-bottom: $tablet-img-padding;
 
     background: linear-gradient(
@@ -354,14 +355,14 @@ $desktop-img-background-height: $tablet-img-background-height;
     }
   }
 
-  .example__transformation {
+  .example__control-wrapper {
     position: relative;
     z-index: 1;
 
     margin-top: 18px;
   }
 
-  .example__transform {
+  .example__range-wrapper {
     width: 428px;
     height: 6px;
     margin-left: 23px;
@@ -370,11 +371,11 @@ $desktop-img-background-height: $tablet-img-background-height;
     background-color: #dcdcdc;
   }
 
-  .example__range {
+  .example__range-line {
     background-color: transparent;
   }
 
-  .example__point {
+  .example__range-point {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -405,7 +406,7 @@ $desktop-img-background-height: $tablet-img-background-height;
     }
   }
 
-  .example__control {
+  .example__toggle {
     padding-bottom: 6px;
 
     font-size: 20px;
@@ -428,6 +429,7 @@ $desktop-img-background-height: $tablet-img-background-height;
 @media (min-width: $desktop) {
   .example {
     width: 1220px / $desktop * 100%;
+    margin-top: 24px;
     padding: 0;
     padding-bottom: 74px;
 
@@ -502,7 +504,7 @@ $desktop-img-background-height: $tablet-img-background-height;
     background-color: #f2f2f2;
   }
 
-  .example__transform-wrapper {
+  .example__slider-wrapper {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -516,11 +518,11 @@ $desktop-img-background-height: $tablet-img-background-height;
     }
   }
 
-  .example__img-wrapper {
+  .example__slide-wrapper {
     margin-top: $desktop-img-margin;
   }
 
-  .example__img {
+  .example__slide {
     padding-bottom: $desktop-img-padding;
 
     background: linear-gradient(
@@ -542,7 +544,7 @@ $desktop-img-background-height: $tablet-img-background-height;
     }
   }
 
-  .example__transformation {
+  .example__control-wrapper {
     margin-top: 39px;
   }
 }
