@@ -94,13 +94,11 @@ a:not([href]) {
 }
 
 @media (min-width: $desktop) {
-  .header {
-    padding: 55px 110px;
-  }
-}
-
-@media screen and (min-width: $desktop) {
   html {
     overflow-x: hidden;
+  }
+
+  header {
+    padding: 55px 110px;
   }
 }

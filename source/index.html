@@ -134,12 +134,48 @@
             <source type="img/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-            <img src="img/bg-map-mobile@1x.png" width="320px" height="400px" srcset="img/bg-map-mobile@2x.png 2x" alt="Схема нашего расположения">
+            <img src="img/bg-map-mobile@1x.png" width="320" height="400" srcset="img/bg-map-mobile@2x.png 2x" alt="Схема нашего расположения">
           </picture>
         </div>
       </section>
     </main>
     <footer class="footer">
+      <div class="footer__footer-wrapper">
+        <a class="footer__logo">
+          <img src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
+        </a>
+        <div class="footer__socials-wrapper">
+          <ul class="footer__socials-list list-reset">
+            <li>
+              <a class="footer__social-link footer__social-link--vk" href="#">
+                <svg  width="24" height="12">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="footer__social-link footer__social-link--insta" href="#">
+                <svg  width="17" height="18">
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="footer__social-link footer__social-link--fb" href="#">
+                <svg  width="10" height="20">
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a class="footer__academy" href="https://htmlacademy.ru/intensive/adaptive">
+          <p class="footer__academy-title">HTML Academy</p>
+          <svg width="40" height="40">
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
     </footer>
   </body>
 </html>

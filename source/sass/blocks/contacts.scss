@@ -183,13 +183,15 @@ $height-map-container-desktop: $height-map + $margin-map-desktop;
     height: $height-map-container-desktop;
 
     transform: translateX(-50vw);
-    background: linear-gradient(
-      90deg,
-    #f2f2f2 0,
-    #f2f2f2 50%,
-    #cdcdcd 50%,
-    #cdcdcd 100%
-    );
+    background:
+      linear-gradient(0deg, #f2f2f2, transparent),
+      linear-gradient(
+        90deg,
+      #f2f2f2 0,
+      #f2f2f2 50%,
+      #cdcdcd 50%,
+      #cdcdcd 100%
+      );
   }
 
   .contacts__img-wrapper {
