@@ -28,7 +28,7 @@ $height-map-container-desktop: $height-map + $margin-map-desktop;
   margin: 0 auto;
   padding: 27px 17px 26px 19px;
 
-  background-color: #ffffff;
+  background-color: $white;
 
   span {
     display: inline-block;
@@ -48,7 +48,7 @@ $height-map-container-desktop: $height-map + $margin-map-desktop;
   padding: 0;
   padding-right: 18px;
 
-  color: #111111;
+  color: $black-1;
 
   @include text(400, 16px, 20px, uppercase);
 }
@@ -57,7 +57,7 @@ $height-map-container-desktop: $height-map + $margin-map-desktop;
   margin: 0;
   padding: 0;
 
-  color: #444444;
+  color: $black-2;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
@@ -184,13 +184,13 @@ $height-map-container-desktop: $height-map + $margin-map-desktop;
 
     transform: translateX(-50vw);
     background:
-      linear-gradient(0deg, #f2f2f2, transparent),
+      linear-gradient(0deg, $gray-1, transparent),
       linear-gradient(
         90deg,
-      #f2f2f2 0,
-      #f2f2f2 50%,
-      #cdcdcd 50%,
-      #cdcdcd 100%
+        $gray-1 0,
+        $gray-1 50%,
+        $gray-3 50%,
+        $gray-3 100%
       );
   }
 

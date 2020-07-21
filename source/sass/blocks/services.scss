@@ -22,7 +22,7 @@ $background-img-service-pro: url("../img/icon-cat-pro.svg"), $background-color-s
   margin: 0;
   padding: 23px 21px;
 
-  background-color: #f2f2f2;
+  background-color: $gray-1;
 
   &:not(:last-child) {
     margin-bottom: 19px;
@@ -35,7 +35,7 @@ $background-img-service-pro: url("../img/icon-cat-pro.svg"), $background-color-s
     margin: 0;
     padding: 0;
 
-    color: #111111;
+    color: $black-1;
 
     @include text(400, 24px, 37px, uppercase);
 
@@ -64,13 +64,11 @@ $background-img-service-pro: url("../img/icon-cat-pro.svg"), $background-color-s
     padding: 0;
     padding-bottom: 23px;
 
-    color: #444444;
+    color: $black-2;
     font-family: "Arial", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-
-    border-bottom: 1px solid #0000001a;
   }
 
   a {
@@ -81,7 +79,7 @@ $background-img-service-pro: url("../img/icon-cat-pro.svg"), $background-color-s
     margin-top: 18px;
     padding: 0;
 
-    color: #111111;
+    color: $black-1;
     text-decoration: none;
 
     @include text(400, 16px, 16px, uppercase);

@@ -7,21 +7,21 @@
   margin: 0 auto;
   padding: 0;
 
-  color: #ffffff;
+  color: $white;
   text-decoration: none;
 
   @include text(400, 14px, 18px, uppercase);
 
-  background-color: #68b738;
+  background-color: $green-4;
   border: none;
   outline: none;
 
   &:hover {
-    background-color: #5eaa2f;
+    background-color: $green-5;
   }
 
   &:active {
-    color: #ffffff4d;
+    color: $black-10;
   }
 }
 
@@ -35,7 +35,7 @@
 @media (min-width: $desktop) {
   .action-button {
     &:focus {
-      background-color: #5eaa2f;
+      background-color: $green-5;
     }
   }
 }

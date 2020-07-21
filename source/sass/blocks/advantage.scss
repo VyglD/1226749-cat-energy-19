@@ -45,7 +45,7 @@
     padding: 0;
     margin-right: 20px;
 
-    background-color: #68b738;
+    background-color: $green-4;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 50px;
@@ -151,7 +151,7 @@
 
       display: block;
 
-      color: #f2f2f2;
+      color: $gray-1;
 
       @include text(400, 281px, 281px, none);
     }

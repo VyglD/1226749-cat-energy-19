@@ -1,7 +1,7 @@
 .footer {
   width: 100%;
 
-  background-color: #f2f2f2f2;
+  background-color: $gray-1;
 }
 
 .footer__footer-wrapper {
@@ -52,7 +52,7 @@
     width: 88%;
     height: 1px;
 
-    background-color: #000000;
+    background-color: $black-4;
     opacity: 0.1;
   }
 }
@@ -76,7 +76,7 @@
   &:hover,
   &:focus {
     svg {
-      fill: #68b738;
+      fill: $green-4;
     }
   }
 
@@ -84,7 +84,7 @@
     opacity: 0.3;
 
     svg {
-      fill: #68b738;
+      fill: $green-4;
     }
   }
 }
@@ -106,13 +106,13 @@
   outline: none;
 
   svg {
-    fill: #666666;
+    fill: $black-5;
   }
 
   &:hover,
   &:focus {
     svg {
-      fill: #68b738;
+      fill: $green-4;
     }
   }
 
@@ -128,7 +128,7 @@
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
-  color: #444444;
+  color: $black-2;
 }
 
 @media (min-width: $tablet) {
