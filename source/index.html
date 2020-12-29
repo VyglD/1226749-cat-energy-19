@@ -1,123 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <include src="source\html_blocks\head.html"></include>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat Energy</title>
   </head>
   <body>
     <header class="header">
-      <div class="header__nav-panel">
-        <a class="header__logo-link">
-          <picture class="header__logo-wrapper">
-            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Cat Energy">
-          </picture>
-        </a>
-        <button class="header__nav-toggle header__nav-toggle--no-js" type="button" id="nav-toggle-js"><span>Открыть/скрыть меню</span></button>
-      </div>
-      <nav class="header__nav header__nav--no-js" id="nav-js">
-        <ul class="header__nav-list list-reset">
-          <li class="header__nav-item header__nav-item--index header__nav-item--active">
-            <a>Главная</a>
-          </li>
-          <li class="header__nav-item header__nav-item--index">
-            <a href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="header__nav-item header__nav-item--index">
-            <a href="program.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
     </header>
     <main class="main">
-      <section class="main__poster poster">
-        <h1 class="poster__title">Функциональное питание для котов</h1>
-        <p class="poster__sub-title">Занялся собой? Займись котом!</p>
-        <picture class="poster__image-wrapper">
-          <source type="image/webp" media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
-          <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
-          <img class="poster__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270" alt="Упаковка CAT ENERGY PRO с курицей">
-        </picture>
-        <a href="program.html" class="poster__button action-button">Подобрать программу</a>
-      </section>
-      <section class="main__services services">
-        <h2 class="visually-hidden">Услуги Cat Energy</h2>
-        <div class="services-item services-item--slim">
-          <h3>Похудение</h3>
-          <p >Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a href="catalog.html">Каталог Slim</a>
-        </div>
-        <div class="services-item services-item--pro">
-          <h3>Набор массы</h3>
-          <p>Заработать авторитет среди дворовых котов и даже собак?
-            Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a href="catalog.html">Каталог pro</a>
-        </div>
-      </section>
-      <section class="main__advantage advantage">
-        <h2 class="advantage__title">Как это работает</h2>
-        <ul class="advantage__list list-reset">
-          <li class="advantage__item advantage__item--natural">
-            <p>Функциональное питание содержит только полезные питательные вещества.</p>
-          </li>
-          <li class="advantage__item advantage__item--powder">
-            <p>Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-          </li>
-          <li class="advantage__item advantage__item--meal">
-            <p>Замените один-два приема обычной еды на наше функциональное питание.</p>
-          </li>
-          <li class="advantage__item advantage__item--changes">
-            <p>Уже через месяц наслаждайтесь изменениями к лучшему <span>вашего питомца!</span></p>
-          </li>
-        </ul>
-      </section>
-      <section class="main__example example">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="example__achievments-wrapper">
-          <div class="example__achievement">
-            <p class="example__achievement-title">Cнижение веса</p>
-            <p class="example__achievement-item">5 кг</p>
-          </div>
-          <div class="example__achievement">
-            <p class="example__achievement-title">Затрачено времени</p>
-            <p class="example__achievement-item">60 дней</p>
-          </div>
-          <div class="example__achievement">
-            <p class="example__achievement-title">Затраты на питание: </p>
-            <p class="example__achievement-item">15 000 руб.</p>
-          </div>
-        </div>
-        <div class="example__img-wrapper">
-          <picture class="example__img example__img--before">
-            <source type="image/webp" media="(min-width: 1440px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
-            <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png 1x, before-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, before-tablet@2x.png 2x">
-            <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="Толстый кот">
-          </picture>
-          <picture class="example__img example__img--after">
-            <source type="image/webp" media="(min-width: 1440px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
-            <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png 1x, after-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, after-tablet@2x.png 2x">
-            <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="311" height="232" alt="Толстый кот">
-          </picture>
-        </div>
-        <div class="example__control">
-          <button class="example__checkpoint example__checkpoint--before" type="button">Было</button>
-          <input class="example__toggle" type="range">
-          <button class="example__checkpoint example__checkpoint--after" type="button">Стало</button>
-        </div>
-      </section>
     </main>
     <footer class="footer">
     </footer>
   </body>
 </html>
+
